@@ -126,12 +126,48 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                name="exp_city_1" id="exp_city_1" placeholder="City">
+                                                            <select id="exp_startyear_1" name="exp_startyear_1"
+                                                            class="form-control">
+                                                            <option value="">Start Year</option>
+                                                        </select>
                                                         </div>
                                                     </div>
                                                 </div>
-
+                                                <div class="row p-4">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <select id="exp_endmnth_1" name="exp_endmnth_1"
+                                                            class="form-control">
+                                                            <option value="">End Month</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <select id="exp_endyear_1" name="exp_endyear_1"
+                                                            class="form-control">
+                                                            <option value="">End Year</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="exp_current_1"
+                                                        id="exp_current_1" ><label for="exp_current_1">I currently work here</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea name="exp_responsiblity_1" class="form-control" id="exp_responsiblity_1" cols="30" rows="6" placeholder="Responsibilities"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <h3 class="mb-4">Education</h3>
+                                            </div>
+                                            <div class="education-blk">
+                                                
                                             </div>
 
                                             <div class="col-md-12">
