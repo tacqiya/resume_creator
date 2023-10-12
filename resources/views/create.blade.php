@@ -119,17 +119,17 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <select id="exp_startmnth_1" name="exp_startmnth_1"
-                                                            class="form-control">
-                                                            <option value="">Start Month</option>
-                                                        </select>
+                                                                class="form-control">
+                                                                <option value="">Start Month</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <select id="exp_startyear_1" name="exp_startyear_1"
-                                                            class="form-control">
-                                                            <option value="">Start Year</option>
-                                                        </select>
+                                                                class="form-control">
+                                                                <option value="">Start Year</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -137,29 +137,31 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <select id="exp_endmnth_1" name="exp_endmnth_1"
-                                                            class="form-control">
-                                                            <option value="">End Month</option>
-                                                        </select>
+                                                                class="form-control">
+                                                                <option value="">End Month</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <select id="exp_endyear_1" name="exp_endyear_1"
-                                                            class="form-control">
-                                                            <option value="">End Year</option>
-                                                        </select>
+                                                                class="form-control">
+                                                                <option value="">End Year</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <input type="checkbox" name="exp_current_1"
-                                                        id="exp_current_1" ><label for="exp_current_1">I currently work here</label>
+                                                            id="exp_current_1"><label for="exp_current_1">I currently
+                                                            work here</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <textarea name="exp_responsiblity_1" class="form-control" id="exp_responsiblity_1" cols="30" rows="6" placeholder="Responsibilities"></textarea>
+                                                        <textarea name="exp_responsiblity_1" class="form-control" id="exp_responsiblity_1" cols="30" rows="6"
+                                                            placeholder="Responsibilities"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,14 +169,121 @@
                                                 <h3 class="mb-4">Education</h3>
                                             </div>
                                             <div class="education-blk">
-                                                
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="school_1"
+                                                            id="school_1" placeholder="School">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="course_1"
+                                                            id="course_1" placeholder="Degree/Course">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="major_1"
+                                                            id="major_1" placeholder="Major/Field of study">
+                                                    </div>
+                                                </div>
+                                                <div class="row p-4">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <select id="grad_mnth_1" name="grad_mnth_1"
+                                                                class="form-control">
+                                                                <option value="">Graduation Month</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <select id="grad_yr_1" name="grad_yr_1"
+                                                                class="form-control">
+                                                                <option value="">Graduation Year</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                                                <h3 class="mb-4">Certifications</h3>
+                                            </div>
+                                            <div class="cert-blk">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="certification_1"
+                                                            id="certification_1" placeholder="Licence/Certification">
+                                                    </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-md-12">
+                                                <h3 class="mb-4">Skills</h3>
+                                            </div>
+                                            <div class="skill-blk">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="skill_1"
+                                                            id="skill_1" placeholder="Skill">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <h3 class="mb-4">Career Objective</h3>
+                                            </div>
+                                            <div class="skill-blk">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea name="career_objective" class="form-control" id="career_objective" cols="30" rows="6" placeholder="Career Objective"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <h3 class="mb-4">References</h3>
+                                            </div>
+                                            <div class="reference-blk">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea name="reference_1" class="form-control" id="reference_1" cols="30" rows="6" placeholder="Reference Details"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <h3 class="mb-4">Languages</h3>
+                                            </div>
+                                            <div class="language-blk">
+                                                <div class="row p-4">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="lang_1"
+                                                            id="lang_1" placeholder="Language">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="proficiency_1"
+                                                            id="proficiency_1" placeholder="Proficiency">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <h3 class="mb-4">Additional Information</h3>
+                                            </div>
+                                            <div class="reference-blk">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea name="additional_1" class="form-control" id="additional_1" cols="30" rows="6" placeholder="Additional Details"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <input type="submit" value="Send Message"
