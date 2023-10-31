@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ url('') }}/assets/css/style.css">
 
 </head>
-
+{{-- {{$countries}} --}}
 <body>
     <section class="ftco-section">
         <div class="container">
@@ -28,12 +28,13 @@
                         <div class="row no-gutters">
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                                    <h3 class="mb-4">Write us</h3>
+                                    <h3 class="mb-4">Personal Details</h3>
                                     <div id="form-message-warning" class="mb-4"></div>
                                     <div id="form-message-success" class="mb-4">
                                         Your message was sent, thank you!
                                     </div>
                                     <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
@@ -279,14 +280,14 @@
                                             <div class="reference-blk">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <textarea name="additional_1" class="form-control" id="additional_1" cols="30" rows="6" placeholder="Additional Details"></textarea>
+                                                        <textarea name="additional_info" class="form-control" id="additional_info" cols="30" rows="6" placeholder="Additional Details"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="submit" value="Send Message"
+                                                    <input type="submit" value="submit" name="submit"
                                                         class="btn btn-primary">
                                                     <div class="submitting"></div>
                                                 </div>
@@ -346,7 +347,7 @@
     <script src="{{ url('') }}/assets/js/popper.js"></script>
     <script src="{{ url('') }}/assets/js/bootstrap.min.js"></script>
     <script src="{{ url('') }}/assets/js/jquery.validate.min.js"></script>
-    <script src="{{ url('') }}/assets/js/main.js"></script>
+    {{-- <script src="{{ url('') }}/assets/js/main.js"></script> --}}
 
 </body>
 

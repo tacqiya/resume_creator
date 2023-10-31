@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [ResumeController::class, 'index']);
+Route::post('/', [ResumeController::class, 'index']);
