@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\ResumeModel;
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\PDFController;
+
 class ResumeController extends Controller
 {
     public function index(Request $request) {
-        dd($countries);
+        // dd($countries);
         $data['page'] = 'home';
         if($request['submit'] == 'submit') {
             // dd($request);
@@ -36,9 +38,12 @@ class ResumeController extends Controller
                 'languages' => $request['firstname'],
                 'additional_info' => $request['firstname'],
             ];
-
+            dd($insert_data);
             $newProduct = ResumeModel::create($insert_data);
-            return redirect(route('/'));
+
+            $printReport = new PDFController;
+            $printReport->generatePDF($insert_data);
+            // return redirect(route('home'));
         }
         
         return view('create', $data);

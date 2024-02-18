@@ -3,6 +3,8 @@
 use App\Http\Controllers\ResumeController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PDFController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [ResumeController::class, 'index']);
+Route::get('/', [ResumeController::class, 'index'])->name('home');
 Route::post('/', [ResumeController::class, 'index']);
+Route::get('/create', [ResumeController::class, 'create'])->name('create');
+Route::get('generate-pdf', [PDFController::class, 'generatePDF']);

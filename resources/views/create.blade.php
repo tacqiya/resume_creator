@@ -23,10 +23,10 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-10">
+                <div class="col-lg-12">
                     <div class="wrapper">
                         <div class="row no-gutters">
-                            <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="col-md-12 d-flex align-items-stretch">
                                 <div class="contact-wrap w-100 p-md-5 p-4 py-5">
                                     <h3 class="mb-4">Personal Details</h3>
                                     <div id="form-message-warning" class="mb-4"></div>
@@ -68,7 +68,7 @@
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <select id="country" name="country" class="form-control">
+                                                    <select id="country" name="country" class="form-control country">
                                                         <option value="">Country</option>
                                                     </select>
                                                 </div>
@@ -89,6 +89,7 @@
                                                 <h3 class="mb-4">Experience</h3>
                                             </div>
                                             <div class="experince-blk">
+                                                <div class="first-blk first-blk-1">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" name="exp_jobtitle_1"
@@ -105,7 +106,7 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <select id="exp_country_1" name="exp_country_1"
-                                                            class="form-control">
+                                                            class="form-control country">
                                                             <option value="">Country</option>
                                                         </select>
                                                     </div>
@@ -120,7 +121,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <select id="exp_startmnth_1" name="exp_startmnth_1"
-                                                                class="form-control">
+                                                                class="form-control month">
                                                                 <option value="">Start Month</option>
                                                             </select>
                                                         </div>
@@ -138,7 +139,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <select id="exp_endmnth_1" name="exp_endmnth_1"
-                                                                class="form-control">
+                                                                class="form-control month">
                                                                 <option value="">End Month</option>
                                                             </select>
                                                         </div>
@@ -166,6 +167,10 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            </div>
+                                            <div id="extra-exp"></div>
+                                            <button type="button" id="add-exp">Add Experience</button>
+
                                             <div class="col-md-12">
                                                 <h3 class="mb-4">Education</h3>
                                             </div>
@@ -192,7 +197,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <select id="grad_mnth_1" name="grad_mnth_1"
-                                                                class="form-control">
+                                                                class="form-control month">
                                                                 <option value="">Graduation Month</option>
                                                             </select>
                                                         </div>
@@ -296,7 +301,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-6 d-flex align-items-stretch">
+                            {{-- <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
                                     <h3>Contact information</h3>
                                     <p class="mb-4">We're open for any suggestion or just to have a chat</p>
@@ -335,7 +340,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -347,6 +352,7 @@
     <script src="{{ url('') }}/assets/js/popper.js"></script>
     <script src="{{ url('') }}/assets/js/bootstrap.min.js"></script>
     <script src="{{ url('') }}/assets/js/jquery.validate.min.js"></script>
+    <script src="{{ url('') }}/assets/js/webfront.js"></script>
     {{-- <script src="{{ url('') }}/assets/js/main.js"></script> --}}
 
 </body>
